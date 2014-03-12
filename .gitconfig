@@ -1,0 +1,7 @@
+[user]
+	name = kenleytomlin
+	email = kenleytomlin@gmail.com
+[core]
+	editor = vim
+[color]
+	ui = true
