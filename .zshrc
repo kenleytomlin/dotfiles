@@ -52,3 +52,5 @@ export PERL5LIB="/Users/kenleytomlin/perl5/lib/perl5:$PERL5LIB";
 export PATH="/Users/kenleytomlin/perl5/bin:$PATH";
 export GOPATH="$HOME/go/";
 export PATH="$PATH:$GOPATH/bin";
+export NVM_DIR="$HOME/.nvm"
+. "$(brew --prefix nvm)/nvm.sh"
