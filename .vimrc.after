@@ -283,7 +283,7 @@ syntax enable
 set background=dark
 colorscheme solarized
 
-source /Users/kenleytomlin/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim/plugin/powerline.vim
+source /Users/$USER/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim/plugin/powerline.vim
 set guifont=Inconsolata\ for\ Powerline:h15
 let g:Powerline_symbols = 'fancy'
 set t_Co=256
