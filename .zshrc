@@ -44,13 +44,11 @@ plugins=(git docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
-export PATH="/usr/local/bin:$PATH";
-export PERL_LOCAL_LIB_ROOT="/Users/kenleytomlin/perl5:$PERL_LOCAL_LIB_ROOT";
-export PERL_MB_OPT="--install_base "/Users/kenleytomlin/perl5"";
-export PERL_MM_OPT="INSTALL_BASE=/Users/kenleytomlin/perl5";
-export PERL5LIB="/Users/kenleytomlin/perl5/lib/perl5:$PERL5LIB";
-export PATH="/Users/kenleytomlin/perl5/bin:$PATH";
-export GOPATH="$HOME/go/";
-export PATH="$PATH:$GOPATH/bin";
+export GOPATH="$HOME/code/go";
+export PATH="/usr/local/bin:$PATH:$GOPATH/bin";
 export NVM_DIR="$HOME/.nvm"
 . "$(brew --prefix nvm)/nvm.sh"
+export PYENV_ROOT=/usr/local/var/pyenv
+eval "$(pyenv init -)"
+eval "$(rbenv init -)"
+
