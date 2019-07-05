@@ -47,7 +47,8 @@ source $ZSH/oh-my-zsh.sh
 export GOPATH="$HOME/code/go";
 export PATH="/usr/local/bin:$PATH:$GOPATH/bin";
 export NVM_DIR="$HOME/.nvm"
-. "$(brew --prefix nvm)/nvm.sh"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"
 export PYENV_ROOT=/usr/local/var/pyenv
 eval "$(pyenv init -)"
 eval "$(rbenv init -)"
