@@ -40,7 +40,7 @@ ZSH_THEME="ys"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git docker docker-compose)
+plugins=(gitfast git docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
@@ -53,3 +53,4 @@ export PYENV_ROOT=/usr/local/var/pyenv
 eval "$(pyenv init -)"
 eval "$(rbenv init -)"
 
+export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
