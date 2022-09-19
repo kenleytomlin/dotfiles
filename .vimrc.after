@@ -35,6 +35,9 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 
+""Tabs for makefiles
+autocmd FileType make set noexpandtab
+
 "Show command in bottom right portion of the screen
 "set showcmd
 "
@@ -228,6 +231,11 @@ if has("autocmd")
 " Code completion for Eclim
 " let g:SuperTabDefaultCompletionType = 'context'
 
+" vim-prettier config
+
+let g:prettier#autoformat_config_present = 1
+let g:prettier#autoformat_require_pragma = 0
+
 " Move between panes much more easily
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -239,8 +247,6 @@ map <leader>gst :Gstatus<cr>
 map <leader>gd :Gdiff<cr>
 
 syntax enable
-set background=dark
-colorscheme solarized
 
 source /Users/$USER/Library/Python/3.7/lib/python/site-packages/powerline/bindings/vim/plugin/powerline.vim
 set guifont=Inconsolata\ for\ Powerline:h15
