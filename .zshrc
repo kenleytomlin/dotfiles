@@ -45,15 +45,12 @@ plugins=(gitfast git docker docker-compose)
 source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export GOPATH="$HOME/code/go";
-export PATH="/usr/local/bin:$PATH:$GOPATH/bin";
 export PYENV_ROOT=/usr/local/var/pyenv
-export PATH=/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/kenley/code/go/bin:/Users/kenley/code/go/bin
+export PATH="$PATH:$GOPATH/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-source $(brew --prefix nvm)/nvm.sh
-
 
 alias vim="nvim"
 
