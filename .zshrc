@@ -46,11 +46,14 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export GOPATH="$HOME/code/go";
 export PATH="/usr/local/bin:$PATH:$GOPATH/bin";
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"
 export PYENV_ROOT=/usr/local/var/pyenv
-eval "$(pyenv init -)"
-eval "$(rbenv init -)"
+export PATH=/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/kenley/code/go/bin:/Users/kenley/code/go/bin
 
-export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+source $(brew --prefix nvm)/nvm.sh
+
+
+alias vim="nvim"
+
