@@ -2,7 +2,7 @@ local keymap = vim.keymap
 
 -- upper/lower word
 keymap.set('n', '<Leader>u', 'mQviwU`Q')
-keymap.set('n','<Leader>', 'lmQviwu`Q')
+keymap.set('n','<Leader>l', 'lmQviwu`Q')
 
 -- upper/lower first char of word
 keymap.set('n', '<Leader>U', 'mQgewvU`Q')
