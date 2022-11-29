@@ -46,7 +46,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export GOPATH="$HOME/code/go";
 export PYENV_ROOT=/usr/local/var/pyenv
-export PATH="$PATH:$GOPATH/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/opt/homebrew/bin:$PATH:$GOPATH/bin"
 
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
