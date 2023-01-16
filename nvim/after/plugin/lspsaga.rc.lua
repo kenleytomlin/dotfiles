@@ -1,16 +1,16 @@
 local status, saga = pcall(require, 'lspsaga')
 if (not status) then return end
 
-saga.init_lsp_saga {
+saga.setup({
   server_filetype_map = {
-    typescript = 'typescript'
+    typescript = 'typescript',
   },
   finder_action_keys = {
     open = '<CR>',
     quit = '<ESC>'
   },
   rename_action_quit = '<ESC>'
-}
+})
 
 -- Lsp finder find the symbol definition implementation reference
 vim.keymap.set('n', 'gh', '<Cmd>Lspsaga lsp_finder<CR>', { silent = true, noremap = true })
