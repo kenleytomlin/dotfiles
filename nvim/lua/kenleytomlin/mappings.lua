@@ -2,14 +2,14 @@ local keymap = vim.keymap
 
 -- upper/lower word
 keymap.set('n', '<Leader>u', 'mQviwU`Q')
-keymap.set('n','<Leader>l', 'lmQviwu`Q')
+keymap.set('n', '<Leader>l', 'lmQviwu`Q')
 
 -- upper/lower first char of word
 keymap.set('n', '<Leader>U', 'mQgewvU`Q')
 keymap.set('n', '<Leader>L', 'mQgewvu`Q')
 
 -- find merge conflict markers
-keymap.set('n','<Leader>fc', '<ESC>/\v^[<=>]{7}( .*\\|$)<CR>', { silent = true })
+keymap.set('n', '<Leader>fc', '<ESC>/\v^[<=>]{7}( .*\\|$)<CR>', { silent = true })
 
 -- Map the arrow keys o be based on display lines, not physical lines
 keymap.set('', '<Down>', 'gj')
@@ -26,4 +26,12 @@ keymap.set('v', '<C-j>', ":m '>+1<CR>gv=gv")
 keymap.set('v', '<C-k>', ":m '<-2<CR>gv=gv")
 
 -- Reload neovim config
-keymap.set('', '<Leader>sv', ':source $MYVIMRC<CR>', { remap = false })
+keymap.set("n", "<leader>sv", function()
+  vim.cmd([[
+      update $MYVIMRC
+      source $MYVIMRC
+    ]])
+end, {
+  silent = true,
+  desc = "reload init.lua",
+})
