@@ -8,5 +8,9 @@ null_ls.setup({
       diagnostics_format = '[eslint] #{m}\n(#{c})'
     }),
     null_ls.builtins.formatting.prettierd,
+    null_ls.builtins.diagnostics.credo.with({
+      diagnostics_format = '[credo] #{m}\n(#{c})'
+    }),
+    null_ls.builtins.formatting.mix,
   }
 })

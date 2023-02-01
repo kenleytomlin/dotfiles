@@ -29,3 +29,12 @@ end, { silent = true })
 vim.keymap.set("n", "]E", function()
   require('lspsaga.diagnostic').goto_next({ severity = vim.diagnostic.severity.ERROR })
 end, { silent = true })
+
+-- Jump to warning
+vim.keymap.set("n", "[e", function()
+  require('lspsaga.diagnostic').goto_prev({ severity = vim.diagnostic.severity.WARN })
+end, { silent = true })
+
+vim.keymap.set("n", "]e", function()
+  require('lspsaga.diagnostic').goto_next({ severity = vim.diagnostic.severity.WARN })
+end, { silent = true })
