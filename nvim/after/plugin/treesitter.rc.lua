@@ -17,7 +17,10 @@ ts.setup {
     'json',
     'yaml',
     'css',
-    'html'
+    'html',
+    'elixir',
+    'heex',
+    'eex'
   },
   autotag = {
     enable = true
