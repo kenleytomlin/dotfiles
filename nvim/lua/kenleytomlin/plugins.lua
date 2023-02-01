@@ -34,7 +34,7 @@ packer.startup(function(use)
   use 'williamboman/mason-lspconfig.nvim'
   use 'jose-elias-alvarez/null-ls.nvim'
   use {
-    'glepnir/lspsaga.nvim', branch = 'main'
+    'glepnir/lspsaga.nvim', commit = 'b7b4777369b441341b2dcd45c738ea4167c11c9e'
   }
   use {
     'nvim-treesitter/nvim-treesitter',
