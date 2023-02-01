@@ -1,7 +1,7 @@
 local status, cmp = pcall(require, "cmp")
 if (not status) then return end
 local luasnip = require('luasnip')
-local lspkind = require 'lspkind'
+local lspkind = require('lspkind')
 
 local has_words_before = function()
   local line, col = unpack(vim.api.nvim_win_get_cursor(0))
