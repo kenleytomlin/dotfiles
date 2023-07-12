@@ -1,3 +1,12 @@
 tmux_conf_copy_to_os_clipboard=true
 set -g mouse on
 set-option -g default-command "reattach-to-user-namespace -l zsh"
+bind M-c attach-session -c "#{pane_current_path}"
+bind C new-window -c "#{pane_current_path}"
+
+# Plugins
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-continuum'
+
+# Auto restore nvim sessions
+set -g @resurrect-strategy-nvim 'session'
