@@ -3,12 +3,15 @@ if (not status) then return end
 
 saga.setup({
     -- server_filetype_map = {typescript = 'typescript'},
-    finder = {keys = {open = '<CR>', quit = '<ESC>'}, default = "ref+imp"},
+    finder = {
+        keys = {expand_or_jump = '<CR>', quit = '<ESC>'},
+        default = "ref+imp"
+    },
     rename = {keys = {quit = '<ESC>'}}
 })
 
 -- Lsp finder find the symbol definition implementation reference
-vim.keymap.set('n', 'gh', '<Cmd>Lspsaga finder<CR>',
+vim.keymap.set('n', 'gh', '<Cmd>Lspsaga lsp_finder<CR>',
                {silent = true, noremap = true})
 
 -- Code action
