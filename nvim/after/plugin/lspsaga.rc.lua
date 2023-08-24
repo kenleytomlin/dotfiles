@@ -2,9 +2,9 @@ local status, saga = pcall(require, 'lspsaga')
 if (not status) then return end
 
 saga.setup({
-    server_filetype_map = {typescript = 'typescript'},
-    finder_action_keys = {open = '<CR>', quit = '<ESC>'},
-    rename_action_quit = '<ESC>'
+    -- server_filetype_map = {typescript = 'typescript'},
+    finder = {keys = {open = '<CR>', quit = '<ESC>'}, default = "ref+imp"},
+    rename = {keys = {quit = '<ESC>'}}
 })
 
 -- Lsp finder find the symbol definition implementation reference
