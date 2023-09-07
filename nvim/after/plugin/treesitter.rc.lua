@@ -6,7 +6,7 @@ ts.setup {
     indent = {enable = true, disable = {}},
     ensure_installed = {
         'tsx', 'toml', 'lua', 'json', 'yaml', 'css', 'html', 'elixir', 'heex',
-        'eex', 'markdown', 'markdown_inline'
+        'eex', 'markdown', 'markdown_inline', 'javascript', 'typescript'
     },
     autotag = {enable = true}
 }
