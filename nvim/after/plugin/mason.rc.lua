@@ -5,6 +5,4 @@ if (not status2) then return end
 
 mason.setup({})
 
-lspconfig.setup {
-  ensure_installed = { 'sumneko_lua', 'tsserver', 'elixirls' }
-}
+lspconfig.setup {ensure_installed = {'tsserver', 'elixirls'}}

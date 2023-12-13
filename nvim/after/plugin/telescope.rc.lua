@@ -3,26 +3,13 @@ if (not status) then return end
 local actions = require('telescope.actions')
 local builtin = require('telescope.builtin')
 
-local fb_actions = require "telescope".extensions.file_browser.actions
+local fb_actions = require"telescope".extensions.file_browser.actions
 
-local function telescope_buffer_dir()
-  return vim.fn.expand('%:p:h')
-end
+local function telescope_buffer_dir() return vim.fn.expand('%:p:h') end
 
 telescope.setup {
-    defaults = {
-        mappings = {
-            n = {
-                ["q"] = actions.close
-            },
-        },
-    },
-    extensions = {
-        file_browser = {
-            theme = "dropdown",
-            hijack_netrw = true,
-        },
-    }
+    defaults = {mappings = {n = {["q"] = actions.close}}},
+    extensions = {file_browser = {theme = "dropdown", hijack_netrw = true}}
 }
 
 telescope.load_extension('file_browser')
@@ -39,6 +26,6 @@ vim.keymap.set('n', 'fb', function()
         grouped = true,
         previewer = false,
         initial_mode = "normal",
-        layout_config = { height = 40 }
+        layout_config = {height = 40}
     })
 end)
