@@ -7,11 +7,12 @@ saga.setup({
     keys = { expand_or_jump = '<CR>', quit = '<ESC>' },
     default = "ref+imp"
   },
-  rename = { keys = { quit = '<ESC>' } }
+  rename = { keys = { quit = '<ESC>' } },
+  lightbulb = { sign = false }
 })
 
 -- Lsp finder find the symbol definition implementation reference
-vim.keymap.set('n', 'gh', '<Cmd>Lspsaga lsp_finder<CR>',
+vim.keymap.set('n', 'gh', '<Cmd>Lspsaga finder<CR>',
   { silent = true, noremap = true })
 
 -- Code action
