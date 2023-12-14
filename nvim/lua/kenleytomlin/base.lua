@@ -42,4 +42,3 @@ vim.opt.wildignore:append {
 }
 
 vim.g.mapleader = ','
-
