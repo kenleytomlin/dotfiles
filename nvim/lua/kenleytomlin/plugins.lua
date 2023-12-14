@@ -44,6 +44,8 @@ packer.startup(function(use)
 
   use 'MunifTanjim/prettier.nvim' -- Prettier plugin for Neovim's built-in LSP client
 
+  use 'lewis6991/gitsigns.nvim'        -- git plugin
+
   use 'folke/tokyonight.nvim'
   use 'tpope/vim-surround'
 
