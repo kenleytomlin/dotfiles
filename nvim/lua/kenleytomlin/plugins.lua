@@ -33,7 +33,6 @@ packer.startup(function(use)
   use {
     'nvimdev/lspsaga.nvim',
     after = 'nvim-lspconfig',
-    commit = "4f075452c466df263e69ae142f6659dcf9324bf6"
   }
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use 'neovim/nvim-lspconfig' -- LSP
