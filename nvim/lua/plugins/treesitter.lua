@@ -16,6 +16,8 @@ return {
 				"svelte",
 				"typescript",
 				"elixir",
+				"heex",
+				"eex",
 			},
 
 			-- matchup = {
