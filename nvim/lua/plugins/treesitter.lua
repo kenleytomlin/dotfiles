@@ -18,6 +18,7 @@ return {
 				"elixir",
 				"heex",
 				"eex",
+				"dockerfile",
 			},
 
 			-- matchup = {
