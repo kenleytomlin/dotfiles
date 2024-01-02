@@ -1,5 +1,5 @@
 return {
-	"lewis/6991/gitsigns.nvim",
+	"lewis6991/gitsigns.nvim",
 	event = "LazyFile",
 	opts = {
 		on_attach = function(bufnr)
