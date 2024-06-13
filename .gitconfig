@@ -1,6 +1,7 @@
 [user]
 	name = kenleytomlin
 	email = 3004590+kenleytomlin@users.noreply.github.com
+	signingkey = /Users/kenleytomlin/.ssh/id_ed25519.pub
 [core]
 	editor = vim
 [color]
@@ -8,3 +9,7 @@
 [merge "npm-merge-driver"]
 	name = automatically merge npm lockfiles
 	driver = npx npm-merge-driver merge %A %O %B %P
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
